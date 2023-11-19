@@ -1,0 +1,160 @@
+/* understanding css -> styling */
+/* masking css -> style.css */
+/* understanding linking -> <link rel="stylesheet" href="style.css"> */
+/*css boilerplate (upar k dono styling)*/
+/*understanding css writing way*/
+/*understanding width , height*/
+/*understanding units , px and % */
+/*  understanding margin and padding */
+/* understanding background image and things related to it */
+/* understanding position absolute */
+/*  understabding flexbox */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+
+}
+
+.isClass{
+
+}
+
+#isId{
+
+}
+
+#main{
+    width: 30%; /* pure desktop area ka chota area */
+    height: 40%;
+    margin: 20px; /* charo side se 20px ka space / margin-left: 20px; / margin-right: 20px; / top / bottom */ 
+    /* margin: 20px 30px 40px 12px; / margin: 20px 30px; (top right bottom left)  */
+    /* margin hota hai element k bahar ka space */
+
+    /* padding hota hai ek element k andar space */
+    padding: 20px;
+    background-color: red;
+
+}
+
+#mainpx{
+    width: 100px; /* to move little px up or down */
+    height: 100px;
+    background-color: black;
+}
+
+#backGrdImg{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1682687220866-c856f566f1bd?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+/* position absolute */
+
+#car1 {
+    position: absolute; /*car1 ka element upar utt jayega aur piche wle element aage aa jayege*/
+    width:100px;
+    height:120px;
+    background-color: red;
+}
+
+#car2 {
+    position: absolute;
+    /*hum position absolute ko kahi bhi le ja skte hai using top left*/
+    top: 20%;
+    left: 30%;
+    width:110px;
+    height:90px;
+    background-color: blueviolet;
+}
+
+#car3 {
+    width:130px;
+    height:110px;
+    background-color: green;
+}
+
+#car4 {
+    position: absolute; /* agar car4 and car5 position absolute hai toh phir car4 upar utega
+     uske upar car5 utega aur car6 aage aayega */
+    width:100px;
+    height:120px;
+    background-color: black;
+}
+
+#car5 {
+    position: absolute;
+    width:110px;
+    height:90px;
+    background-color: orange;
+}
+
+#car6 {
+    width:130px;
+    height:110px;
+    background-color: blue;
+}
+
+#box{
+    position: relative; /*jiske andar element rakna ho usko postion relative krdo*/
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+#chota{
+    top: 10px; /*even if chota box is position absolute it will still remain inside box 
+    and won't go outsite the box area of parent box cos parent box is position relative  */
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+/*agar ek element position absolute hai toh voh element position relative ka bhi kam krta hai
+matlab uska child, parent element k andar wla area me hoga*/
+
+
+/* Flexbox (width k liye justifycontent , height k liye align-items*/
+#flexbox {
+    display: flex; /*parent*/
+    justify-content: center; /*for width / center / end / start / space-between / space-around*/
+    align-items: center; /*for height...*/
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+}
+
+/*normally sab child element ek k niche ek aayega
+parent ko display: flex; krne par sab aagal bagal aayega */
+#flexbox1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(80, 5, 5);
+}
+
+#flexbox2 {
+    width: 100px;
+    height: 110px;
+    background-color: rgb(226, 6, 138);
+}
+
+#flexbox3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(151, 92, 33);
+}
+
+
+
