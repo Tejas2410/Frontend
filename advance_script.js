@@ -199,3 +199,64 @@ do{
 } while(a > 15); // condition is false
 
 // o/p -> 12
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// callback function
+// aisa code joh baad me chlta hai , usse hum function dedete hai , ye func apna kaam complete karne k baad chalta hai , 
+// joh func hum dete hai voh normal func hi hota hai usse hum callback func khete hai.
+
+//callback function
+setTimeout(function(){
+    console.log("2 minutes halt");
+} , 2000);
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// First class function
+// We can use/treat function as a value/variable
+
+// var a = function(){console.log("Hey");};
+// a(); // Hey
+
+function abcde(a) {
+    a();
+}
+
+// func can be stored in an variable so we can pass func as parameter
+abcde(function(){console.log("Hello");}); // Hello
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//how arrays are made behind the scenes
+
+var arr = [10 , 20 , 30 , 40];
+console.log(typeof(arr)); // object
+
+// arrays are object in js
+
+// arr {
+//     1 : 10,
+//     2 : 20,
+//     3 : 30,
+//     4 : 40
+// }
+
+arr[-1] = 2; // only in js negative index is allowed cos arrays are obj
+console.log(arr); // [ 10, 20, 30, 40, '-1': 2 ]
+
+console.log(typeof({})); // object
+console.log(Array.isArray({})); // false
+console.log(Array.isArray([])); // true
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// how to delete object props
+
+var obj = {
+    name : "Tejas",
+    age : 24
+}
+delete a.age;
+console.log(obj); // { name: 'Tejas', age: 24 }
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

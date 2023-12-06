@@ -17,10 +17,18 @@ conditionals // if else else-if
 --truthy vs falsy
 loops // for and while
 --foreach forin  do-while
-function
-arrays
-push pop shift unshift splice
-object
+-function
+-- callback function
+-- what is first class func
+-arrays
+-push pop shift unshift splice
+-- how arrays are made behind the scenes
+--why we can make negative index array in js
+-object
+-props vs methods
+-updating object props
+--how to delete object props
+-- practice questions and scenerios
 */
 
 // word vs keyword ( word ko compiler nhi samjata aur keyword ko compiler smjta hai)
